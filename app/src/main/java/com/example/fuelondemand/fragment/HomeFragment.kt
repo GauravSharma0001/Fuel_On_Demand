@@ -5,11 +5,15 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.LinearLayout
 import android.widget.Toast
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.denzcoskun.imageslider.constants.ScaleTypes
 import com.example.fuelondemand.R
 import com.example.fuelondemand.databinding.FragmentHomeBinding
 import com.denzcoskun.imageslider.interfaces.ItemClickListener
 import com.denzcoskun.imageslider.models.SlideModel
+import com.example.fuelondemand.adaptar.PopularAddaptar
 
 class HomeFragment : Fragment() {
     private lateinit var binding: FragmentHomeBinding
@@ -32,19 +36,19 @@ class HomeFragment : Fragment() {
 
     }
 
-    override fun onViewCreated(view: android.view.View, savedInstanceState: android.os.Bundle?) {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val imageList = ArrayList<SlideModel>()
         imageList.add(SlideModel(R.drawable.banner1,
-            com.denzcoskun.imageslider.constants.ScaleTypes.FIT))
+            ScaleTypes.FIT))
         imageList.add(SlideModel(R.drawable.banner2,
-            com.denzcoskun.imageslider.constants.ScaleTypes.FIT))
+            ScaleTypes.FIT))
         imageList.add(SlideModel(R.drawable.banner3,
-            com.denzcoskun.imageslider.constants.ScaleTypes.FIT))
+            ScaleTypes.FIT))
 
         val imageSlider = binding.imageSlider
         imageSlider.setImageList(imageList)
-        imageSlider.setImageList(imageList, com.denzcoskun.imageslider.constants.ScaleTypes.FIT)
+        imageSlider.setImageList(imageList, ScaleTypes.FIT)
         imageSlider.setOnClickListener(object: ItemClickListener, View.OnClickListener {
             override fun doubleClick(position: Int) {
                 TODO("Not yet implemented")
@@ -57,10 +61,19 @@ class HomeFragment : Fragment() {
 
             }
 
-            override fun onClick(p0: View?) {
+            override fun onClick(v: View?) {
                 TODO("Not yet implemented")
             }
+
+
         })
+
+        val fuelName = listOf("Petrol", "Diesel", "CNG")
+        val Price = listOf("98.6", "96.20", "89.6")
+        val popularFuelImages = listOf(R.drawable.petrol, R.drawable.diesel, R.drawable.cng)
+        val adaptar = PopularAddaptar(fuelName, Price, popularFuelImages)
+        binding.popularRecyclerView.layoutManager = LinearLayoutManager(requireContext())
+        binding.popularRecyclerView.adapter = adaptar
     }
     companion object {
 
