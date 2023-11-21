@@ -1,13 +1,11 @@
-package com.example.fuelondemand.adaptar
+package com.example.fuelondemand.adapter
 
-import android.media.Image
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.fuelondemand.R
 import com.example.fuelondemand.databinding.PopularItemBinding
 
-class PopularAddaptar(private val items:List<String>,private val price:List<String> ,private val image: List<Int> ) :RecyclerView.Adapter<PopularAddaptar.PopularViewHolder>() {
+class PopularAdapter (private val items:List<String>,private val price:List<String> ,private val image: List<Int> ) :RecyclerView.Adapter<PopularAdapter.PopularViewHolder>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PopularViewHolder {

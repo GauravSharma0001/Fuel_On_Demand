@@ -5,7 +5,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.denzcoskun.imageslider.constants.ScaleTypes
@@ -13,7 +12,9 @@ import com.example.fuelondemand.R
 import com.example.fuelondemand.databinding.FragmentHomeBinding
 import com.denzcoskun.imageslider.interfaces.ItemClickListener
 import com.denzcoskun.imageslider.models.SlideModel
-import com.example.fuelondemand.adaptar.PopularAddaptar
+import com.example.fuelondemand.adapter.PopularAdapter
+
+
 
 class HomeFragment : Fragment() {
     private lateinit var binding: FragmentHomeBinding
@@ -71,9 +72,9 @@ class HomeFragment : Fragment() {
         val fuelName = listOf("Petrol", "Diesel", "CNG")
         val Price = listOf("98.6", "96.20", "89.6")
         val popularFuelImages = listOf(R.drawable.petrol, R.drawable.diesel, R.drawable.cng)
-        val adaptar = PopularAddaptar(fuelName, Price, popularFuelImages)
-        binding.popularRecyclerView.layoutManager = LinearLayoutManager(requireContext())
-        binding.popularRecyclerView.adapter = adaptar
+        val adapter = PopularAdapter(fuelName, Price, popularFuelImages)
+        binding.recyclerView.layoutManager = LinearLayoutManager(requireContext())
+        binding.recyclerView.adapter = adapter
     }
     companion object {
 
