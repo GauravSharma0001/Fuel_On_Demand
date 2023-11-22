@@ -70,7 +70,7 @@ class HomeFragment : Fragment() {
         })
 
         val fuelName = listOf("Petrol", "Diesel", "CNG")
-        val Price = listOf("98.6", "96.20", "89.6")
+        val Price = listOf("98.6/Ltr", "96.20/Ltr", "89.6/Kg")
         val popularFuelImages = listOf(R.drawable.petrol, R.drawable.diesel, R.drawable.cng)
         val adapter = PopularAdapter(fuelName, Price, popularFuelImages)
         binding.recyclerView.layoutManager = LinearLayoutManager(requireContext())

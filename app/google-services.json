@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "872758749826",
+    "project_id": "fuel-on-demand-9b35b",
+    "storage_bucket": "fuel-on-demand-9b35b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:872758749826:android:da41d5fce3068bfe6b229b",
+        "android_client_info": {
+          "package_name": "com.SGSA.fuelondemand"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuSNWQnt8tcsSj-nexULUggcOShYorVpY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
