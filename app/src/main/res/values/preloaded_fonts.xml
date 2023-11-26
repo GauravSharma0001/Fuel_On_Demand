@@ -3,5 +3,8 @@
     <array name="preloaded_fonts" translatable="false">
         <item>@font/comic_neue</item>
         <item>@font/comic_neue_bold</item>
+        <item>@font/lato_bold</item>
+        <item>@font/lato_thin</item>
+        <item>@font/yeon_sung</item>
     </array>
 </resources>

@@ -6,10 +6,10 @@
     android:layout_height="wrap_content">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="323dp"
+        android:layout_width="350dp"
         android:layout_height="87dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         app:cardCornerRadius="22dp"
         app:cardElevation="6dp"
         app:cardMaxElevation="10dp"
@@ -42,8 +42,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
                 android:layout_marginEnd="24dp"
+                android:fontFamily="@font/lato_bold"
                 android:text="Rs. 96.20/-"
                 android:textColor="@color/textColor"
+                android:textSize="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -51,13 +53,13 @@
                 android:id="@+id/addToCartPopular"
                 android:layout_width="80dp"
                 android:layout_height="20dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="16dp"
                 android:background="@drawable/addtocartshape"
                 android:gravity="center"
                 android:text="Add to cart"
                 android:textColor="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.75"
+                app:layout_constraintHorizontal_bias="0.726"
                 app:layout_constraintStart_toEndOf="@+id/fuelPopular"
                 app:layout_constraintTop_toBottomOf="@+id/pricePopular" />
 
@@ -66,9 +68,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
+                android:fontFamily="@font/yeon_sung"
                 android:text="Petrol"
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="24dp"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView4"
                 app:layout_constraintStart_toEndOf="@+id/imageView4"
                 app:layout_constraintTop_toTopOf="@+id/imageView4" />
