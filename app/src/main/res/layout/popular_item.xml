@@ -34,7 +34,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:srcCompat="@tools:sample/avatars" />
+                />
 
             <TextView
                 android:id="@+id/pricePopular"
@@ -42,7 +42,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
                 android:layout_marginEnd="24dp"
-                android:fontFamily="@font/lato_bold"
+                android:fontFamily="sans-serif"
                 android:text="Rs. 96.20/-"
                 android:textColor="@color/textColor"
                 android:textSize="20dp"
@@ -68,7 +68,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:fontFamily="@font/yeon_sung"
+                android:fontFamily="sans-serif"
                 android:text="Petrol"
                 android:textColor="@color/black"
                 android:textSize="24dp"
